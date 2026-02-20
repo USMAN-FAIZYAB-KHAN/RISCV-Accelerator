@@ -1,7 +1,6 @@
 module register_map (
-        input logic [5:0] read_reg1, read_reg2,
-        input logic [5:0] write_reg,
-        input logic reg_write,
+       	input logic clk, reg_write, 
+	input logic [5:0] read_reg1, read_reg2, write_reg,
         input logic [31:0] write_data,
         output logic [31:0] read_data1, read_data2
 );
